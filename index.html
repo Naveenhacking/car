@@ -1,0 +1,24 @@
+        }
+        p.draw();
+        draw_score();
+        }
+        else{
+            game_over();
+        }
+    }
+    
+    function game_over(){
+        c.fillStyle = "red";
+        c.textAlign = "center";
+        c.font = "50px Monospace";
+        c.fillText("Game over!", w/2, h/2);
+        canvas.style.filter = "grayscale(50%)";
+    }
+    
+    start();
+    setInterval(spawn_enemy, 1800);
+    update();
+};
+    </script>
+  </body>
+</html>
